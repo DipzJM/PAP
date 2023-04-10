@@ -1,0 +1,23 @@
+#image-container {
+    position: relative;
+  }
+  
+  #profile-image-form {
+    display: none;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  #image-container:hover #profile-image-form {
+    display: block;
+  }
+
+.gradient-custom {
+    background: rgb(218,32,106);
+background: linear-gradient(90deg, rgba(218,32,106,1) 0%, rgb(94, 26, 99) 93%);
+    }
+
+

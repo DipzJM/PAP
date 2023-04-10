@@ -1,0 +1,21 @@
+/*Animation Modals*/
+.modal.fade .modal-dialog {
+    transform: scale(0.8);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .modal.fade.show .modal-dialog {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .toast.show {
+    animation: my-animation 0.5s ease-in-out;
+  }
+  
+  @keyframes my-animation {
+    from { opacity: 0; transform: translateY(100%); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
