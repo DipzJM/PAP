@@ -80,7 +80,7 @@ class RegisterController extends Controller
         $userDetails->voltas_realizadas = 0;
         $userDetails->corridas_realizadas = 0;
         $userDetails->num_moedas = 0;
-        $userDetails->numero_telemovel = 0;
+        $userDetails->numero_telemovel = $data['phone_number'];
         $userDetails->tempo_jogado = 0;
         $userDetails->imagem = 'caminho_imagem';
         $userDetails->save();

@@ -54,6 +54,13 @@
                             </div>
                         </div>
 
+                        <div class="row mb-3">
+                            <label for="phone_number" class="col-md-4 col-form-label text-md-end">Phone Number</label>
+                            <div class="col-md-8">
+                                <input id="phone_number" type="tel" class="form-control" name="phone_number" maxLength='9' pattern="[0-9]{9}" required>
+                            </div>
+                        </div>
+
 
                         <div class="row mb-3">
                             <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>

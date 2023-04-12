@@ -68,7 +68,7 @@ background: linear-gradient(228deg, rgba(250,2,2,1) 12%, rgba(214,16,31,1) 68%, 
                   </div>
                   <div class="col-6 mb-3">
                     <h4>Phone</h4>
-                    <p class="text-muted">NOP</p>
+                    <p class="text-muted">{{$user->userDetails->numero_telemovel}}</p>
                   </div>
                   <div class="mb-3">
                     <h4>username</h4>
@@ -84,27 +84,27 @@ background: linear-gradient(228deg, rgba(250,2,2,1) 12%, rgba(214,16,31,1) 68%, 
         
         <div class="row counters">
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="{{$user->userDetails->num_moedas}}" data-purecounter-duration="1" class="purecounter"></span>
             <p>Coins</p>
           </div>  
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="{{$user->userDetails->nivel}}" data-purecounter-duration="1" class="purecounter"></span>
             <p>Level</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="{{$user->userDetails->tempo_jogado}}" data-purecounter-duration="1" class="purecounter"></span>
             <p>Time played</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="{{$user->userDetails->corridas_realizadas}}" data-purecounter-duration="1" class="purecounter"></span>
             <p>Races performed</p>
           </div>
 
           <div class="col-lg-0 col-0 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="{{$user->userDetails->voltas_realizadas}}" data-purecounter-duration="1" class="purecounter"></span>
             <p>Laps performed</p>
           </div>
         </div>

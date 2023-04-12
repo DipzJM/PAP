@@ -23,8 +23,6 @@ class User extends Authenticatable implements JWTSubject
         'username',
         'email',
         'password',
-        'first_name',
-        'last_name',
     ];
     
 
@@ -68,6 +66,6 @@ class User extends Authenticatable implements JWTSubject
 
     public function userDetails()
     {
-        return $this->hasOne(UserDetails::class);
+        return $this->hasOne(UserDetails::class ,'user_id','id');
     }
 }
