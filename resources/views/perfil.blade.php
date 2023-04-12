@@ -26,7 +26,7 @@
 
   <!-- Template Main CSS File -->
   @vite(['resources/css/style.css', 'resources/css/animation.css'])
-
+  @vite(['resources/css/profile.css'])
 
 </head>
 
