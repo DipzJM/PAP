@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
+use App\Models\UserDetails;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -54,7 +55,7 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
-        
+
     }
 
     /**
@@ -65,10 +66,27 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'username' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+
+        $userDetails = new UserDetails();
+        $userDetails->user_id = $user->id;
+        $userDetails->first_name = $data['primeiro_nome'];
+        $userDetails->last_name = $data['ultimo_nome'];
+        $userDetails->nivel = 0;
+        $userDetails->voltas_realizadas = 0;
+        $userDetails->corridas_realizadas = 0;
+        $userDetails->num_moedas = 0;
+        $userDetails->numero_telemovel = 0;
+        $userDetails->tempo_jogado = 0;
+        $userDetails->imagem = 'caminho_imagem';
+        $userDetails->save();
+
+        return $user;
     }
+
+
 }

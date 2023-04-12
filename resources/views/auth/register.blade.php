@@ -25,6 +25,22 @@
                         </div>
 
                         <div class="row mb-3">
+                            <label for="primeiro_nome" class="col-md-4 col-form-label text-md-end">First name</label>
+
+                            <div class="col-md-8">
+                                <input id="primeiro_nome" type="text" class="form-control" name="primeiro_nome" required>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="ultimo_nome" class="col-md-4 col-form-label text-md-end">Last name</label>
+
+                            <div class="col-md-8">
+                                <input id="ultimo_nome" type="text" class="form-control" name="ultimo_nome" required>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
                             <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
 
                             <div class="col-md-8">
