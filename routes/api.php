@@ -25,5 +25,5 @@ Route::group([
     'middleware' => 'auth:api',
     'guard' => 'auth'
     ], function ($router) {
-        Route::get('/getUserData', [AuthController::class, 'teste']);
+        Route::get('/getUserData', [AuthController::class, 'userData']);
 });

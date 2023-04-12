@@ -109,8 +109,10 @@ class AuthController extends Controller
         ]);
     }
 
-    public function teste(Request $request){
+    public function userData(Request $request){
         $user = Auth::user();
-        dd($user);
+        $user->load('userDetails');
+        return response()->json([$user]);
     }
+    
 }
