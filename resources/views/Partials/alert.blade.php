@@ -6,14 +6,21 @@
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
     <div class="toast-body">
-      <strong>texto
+      @if ($alert && $alert->ativo)
+        <strong>{{ $alert->texto }}</strong>
+      @else
         <script>
-          document.getElementById("liveToastBtn").style.display = 'none';
+          var liveToastBtn = document.getElementById("liveToastBtn");
+          if (liveToastBtn) {
+            liveToastBtn.style.display = 'none';
+          }
         </script>
-      </strong>
+      @endif
     </div>
   </div>
 </div>
+
+
 
 
 <div class="toast-container position-fixed bottom-0 start-0">

@@ -23,12 +23,14 @@
               </ul>
             </li>
           </ul>
-          <button type="button" class="btn btn-danger position-relative" id="liveToastBtn">
-            <i class="bi bi-bell-fill"></i>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
-              1
-            </span>
-          </button>
+          @if ($alert && $alert->ativo)
+            <button type="button" class="btn btn-danger position-relative" id="liveToastBtn">
+              <i class="bi bi-bell-fill"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                1
+              </span>
+            </button>
+          @endif
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
       </div>
@@ -62,12 +64,15 @@
             <li data-bs-toggle="modal" data-bs-target="#exampleModalToggle"><a href="{{ route('login') }}"><i
                   class="bi bi-person-fill"></i></a></li>
           </ul>
-          <button type="button" class="btn btn-danger position-relative" id="liveToastBtn">
-            <i class="bi bi-bell-fill"></i>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
-              1
-            </span>
-          </button>
+          @if ($alert && $alert->ativo)
+            <button type="button" class="btn btn-danger position-relative" id="liveToastBtn">
+              <i class="bi bi-bell-fill"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                1
+              </span>
+            </button>
+          @endif
+
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
       </div>
