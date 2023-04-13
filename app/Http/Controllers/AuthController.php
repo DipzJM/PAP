@@ -109,9 +109,42 @@ class AuthController extends Controller
     }
 
     public function userData(Request $request){
-        $user = Auth::user();
-        $user->load('userDetails');
-        return response()->json([$user]);
+        
+        try{
+            
+            $user = Auth::user();       
+            $userVehiclesData = $user->userVehicles()->get();
+            $userDetails = $user->userDetails()->get();
+            $userVehicles = $userVehiclesData->pluck('vehicle')->toArray();
+            return response()->json([
+               'success' => TRUE,  
+               'message' => 'utilizador encontrado com sucesso',
+                'data' => [
+                    'userData' => $user,
+                    'userDetails' => [
+                        'Data' => $userDetails,
+                        'vehicles' => $userVehicles
+                    ]
+                   
+                ]
+            ]);
+
+        }catch(ModelNotFoundException $e){
+
+            return response()->json([
+                'success' => FALSE,  
+                'message' => 'Utilizador não encontrado'
+             ]);
+
+        }catch(Exception $e){
+
+            return response()->json([
+               'success' => FALSE,  
+               'message' => $e->getMessage()
+            ]); 
+            
+        }
+
     }
     
 }
