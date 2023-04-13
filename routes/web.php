@@ -21,7 +21,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/perfil', [App\Http\Controllers\PerfilController::class, 'perfil'])->name('perfil');
 });
 
+Route::get('/', [App\Http\Controllers\IndexController::class, 'indexPage'])->name('index');
 
-Route::get('/index', [App\Http\Controllers\IndexController::class, 'indexPage'])->name('index');
 
 
