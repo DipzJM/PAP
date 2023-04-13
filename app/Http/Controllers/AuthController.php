@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Validator;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Exception;
 
 class AuthController extends Controller
 {
