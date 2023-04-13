@@ -14,12 +14,12 @@
     rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="vendor2/animate.css/animate.min.css" rel="stylesheet">
-    <link href="vendor2/aos/aos.css" rel="stylesheet">
-    <link href="vendor2/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor2/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="vendor2/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="vendor2/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../vendor2/animate.css/animate.min.css" rel="stylesheet">
+    <link href="../vendor2/aos/aos.css" rel="stylesheet">
+    <link href="../vendor2/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor2/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../vendor2/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../vendor2/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
     @vite(['resources/css/mycssButton.css', 'resources/css/icon.css'])
