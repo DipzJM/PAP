@@ -30,3 +30,14 @@ MAIL_PASSWORD=
 MAIL_FROM_ADDRESS="no-reply@jarg.pt"
 MAIL_FROM_NAME="mBot Quiz"  
 MAIL_ENCRYPTION=ssl
+
+
+
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=racingmania2023@gmail.com
+MAIL_PASSWORD=ibjjnjheeklqswfu
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS="racingmania2023@gmail.com"
+MAIL_FROM_NAME="Racing Mania"

@@ -2,10 +2,10 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" style="height: 100vh;">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+            <div class="card p-5 mx-auto shadow bg-white">
+                <h1><strong class="row justify-content-center">Reset password</strong></h1> 
 
                 <div class="card-body">
                     @if (session('status'))
@@ -33,7 +33,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="button-1" style="width:250px">
+                                <button type="submit" class="button-1" style="width:300px">
                                     {{ __('Send Password Reset Link') }}
                                 </button>
                             </div>

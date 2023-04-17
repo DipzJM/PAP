@@ -2,11 +2,11 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="d-flex justify-content-center align-items-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
-
+            <div class="card p-5 mx-auto shadow bg-white" style="border-radius: 15px;">
+            <h1><strong class="row justify-content-center">Reset Password</strong></h1>   
+            </br>
                 <div class="card-body">
                     <form method="POST" action="{{ route('password.update') }}">
                         @csrf
@@ -51,7 +51,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="button-1">
                                     {{ __('Reset Password') }}
                                 </button>
                             </div>

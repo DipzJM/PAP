@@ -7,19 +7,19 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Racing Mania</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
     rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="../vendor2/animate.css/animate.min.css" rel="stylesheet">
-    <link href="../vendor2/aos/aos.css" rel="stylesheet">
-    <link href="../vendor2/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../vendor2/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="../vendor2/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="../vendor2/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../../vendor2/animate.css/animate.min.css" rel="stylesheet">
+    <link href="../../vendor2/aos/aos.css" rel="stylesheet">
+    <link href="../../vendor2/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../vendor2/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../vendor2/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../../vendor2/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
     @vite(['resources/css/mycssButton.css', 'resources/css/icon.css'])
