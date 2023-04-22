@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
 use App\Models\UserDetails;
+use App\Models\UtilizadorVeiculo;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -85,6 +86,10 @@ class RegisterController extends Controller
         $userDetails->imagem = 'img\imagens_utilizadores\logo.png';
         $userDetails->save();
 
+        $utilizadorVeiculo = new UtilizadorVeiculo;
+        $utilizadorVeiculo->id_utilizador = $user->id;
+        $utilizadorVeiculo->id_veiculo = 1;
+        $utilizadorVeiculo->save();
 
         //Manda o email de boas-vindas
         \Mail::send('emails.welcome', ['user' => $user], function ($message) use ($user) {
