@@ -19,6 +19,7 @@ Auth::routes();
 
 Route::middleware('auth')->group(function () {
     Route::get('/perfil', [App\Http\Controllers\PerfilController::class, 'perfil'])->name('perfil');
+    Route::post('/update-image', [App\Http\Controllers\PerfilController::class, 'updateImage'])->name('updateImage');
 });
 
 Route::get('/', [App\Http\Controllers\IndexController::class, 'indexPage'])->name('index');

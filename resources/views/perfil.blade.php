@@ -48,13 +48,16 @@ background: linear-gradient(228deg, rgba(250,2,2,1) 12%, rgba(214,16,31,1) 68%, 
             
             <div class="col-md-4 gradient-custom text-center" style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem; padding-top:150px">
             <div id="image-container">
-              <img src="" alt="Minha imagem" style="height:350px">
-            <form id="profile-image-form" action="PHP/save-profile-image.php" method="post" enctype="multipart/form-data">
-              <input type="file" name="image" accept="image/*">
-              <input type="submit" value="Enviar">
-            </form>
+              @if ($user->userDetails && $user->userDetails->imagem)
+                <img src="{{$user->userDetails->imagem}}" alt="Minha imagem" style="height:350px">
+              @endif
+              <form id="profile-image-form" action="/update-image" method="post" enctype="multipart/form-data">
+                @csrf
+                <input type="file" name="image" accept="image/*">
+                <input type="submit" value="Enviar">
+              </form>
             </div>
-              <h2></h2>
+              <h2>{{$user->username}}</h2>
               <i class="far fa-edit mb-5"></i>
             </div>
             
@@ -72,7 +75,7 @@ background: linear-gradient(228deg, rgba(250,2,2,1) 12%, rgba(214,16,31,1) 68%, 
                   </div>
                   <div class="mb-3">
                     <h4>username</h4>
-                    <p class="text-muted">{{$user->username}}</p>
+                    <p class="text-muted">{{$user->userDetails->first_name}} {{$user->userDetails->last_name}}</p>
                   </div>
                 </div>
                 <div class="row pt-1">
