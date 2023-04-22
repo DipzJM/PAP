@@ -85,6 +85,15 @@ class RegisterController extends Controller
         $userDetails->imagem = 'caminho_imagem';
         $userDetails->save();
 
+
+        //Manda o email de boas-vindas
+        \Mail::send('emails.welcome', ['user' => $user], function ($message) use ($user) {
+            $message->to($user->email, $user->name);
+            $message->subject('Bem-vindo ao nosso site');
+        });
+        
+        
+
         return $user;
     }
 
