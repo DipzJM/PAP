@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\GameController;
+use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
@@ -25,6 +26,8 @@ Route::middleware('api')->post('/login', [AuthController::class, 'login']);
 //Criar Jogo
 Route::middleware('api')->post('/createGame', [GameController::class, 'CreateGame']);
 
+//Update UserVehicles
+Route::middleware('api')->post('/updateUserVehicles', [UserController::class, 'updateUserVehicles']);
 
 //login
 Route::group([
