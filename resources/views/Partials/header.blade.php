@@ -12,7 +12,7 @@
             <li><a class="nav-link scrollto" href="/#equipa">Team</a></li>
             <li><a class="nav-link scrollto" href="/#contact">FeedBack</a></li>
             <li class="dropdown"><a class="nav-link scrollto" href="/perfil">
-                <div class="profile"><img src="#" alt="#"></div>
+                <div class="profile"><img src="{{$user->userDetails->imagem}}" alt="#"></div>
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
               <a class="dropdown-item" href="{{ route('logout') }}"

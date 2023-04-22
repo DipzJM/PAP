@@ -82,7 +82,7 @@ class RegisterController extends Controller
         $userDetails->num_moedas = 0;
         $userDetails->numero_telemovel = $data['phone_number'];
         $userDetails->tempo_jogado = 0;
-        $userDetails->imagem = 'img\imagens_utilizadores\defaultImagem.png';
+        $userDetails->imagem = 'img\imagens_utilizadores\logo.png';
         $userDetails->save();
 
 
