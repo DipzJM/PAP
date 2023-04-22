@@ -76,7 +76,7 @@ class RegisterController extends Controller
         $userDetails->user_id = $user->id;
         $userDetails->first_name = $data['primeiro_nome'];
         $userDetails->last_name = $data['ultimo_nome'];
-        $userDetails->nivel = 0;
+        $userDetails->nivel = 1;
         $userDetails->voltas_realizadas = 0;
         $userDetails->corridas_realizadas = 0;
         $userDetails->num_moedas = 0;

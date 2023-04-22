@@ -94,7 +94,7 @@ background: linear-gradient(228deg, rgba(250,2,2,1) 12%, rgba(214,16,31,1) 68%, 
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="{{$user->userDetails->tempo_jogado}}" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="{{ number_format($user->userDetails->tempo_jogado, 1) }}" data-purecounter-duration="1" class="purecounter"></span>
             <p>Time played</p>
           </div>
 

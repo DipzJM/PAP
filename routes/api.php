@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GameController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
@@ -21,6 +22,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::middleware('api')->post('/login', [AuthController::class, 'login']);
 
+//Criar Jogo
+Route::middleware('api')->post('/createGame', [GameController::class, 'CreateGame']);
+
+
+//login
 Route::group([
     'middleware' => 'auth:api',
     'guard' => 'auth'
