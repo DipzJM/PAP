@@ -47,20 +47,20 @@ background: linear-gradient(228deg, rgba(250,2,2,1) 12%, rgba(214,16,31,1) 68%, 
           <div class="row g-0">
             
           <div class="col-md-4 gradient-custom text-center" style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem; padding-top:150px">
-  <div id="image-container">
-    @if ($user->userDetails && $user->userDetails->imagem)
-      <img src="{{$user->userDetails->imagem}}" class="img-fluid" alt="Minha imagem" style="height:350px">
-    @endif
-    <form id="profile-image-form" action="/update-image" method="post" enctype="multipart/form-data">
-      @csrf
-      <input id="image-input" type="file" name="image" accept="image/*" class="hidden" onchange="document.getElementById('profile-image-form').submit();">
-      <input type="submit" value="Enviar" class="hidden">
-    </form>
-    <label for="image-input" id="change-image">Mudar foto de perfil</label>
-  </div>
-  <h2>{{$user->username}}</h2>
-  <i class="far fa-edit mb-5"></i>
-</div>
+            <div id="image-container">
+              @if ($user->userDetails && $user->userDetails->imagem)
+                <img src="{{$user->userDetails->imagem}}" class="img-fluid" alt="Minha imagem" style="height:350px">
+              @endif
+              <form id="profile-image-form" action="/update-image" method="post" enctype="multipart/form-data">
+                @csrf
+                <input id="image-input" type="file" name="image" accept="image/*" class="hidden" onchange="document.getElementById('profile-image-form').submit();">
+                <input type="submit" value="Enviar" class="hidden">
+              </form>
+              <label for="image-input" id="change-image">Mudar foto de perfil</label>
+            </div>
+            <h2>{{$user->username}}</h2>
+            <i class="far fa-edit mb-5"></i>
+          </div>
 
             
             <div class="col-md-8">
