@@ -12,7 +12,9 @@
             <li><a class="nav-link scrollto" href="/#equipa">Team</a></li>
             <li><a class="nav-link scrollto" href="/#contact">FeedBack</a></li>
             <li class="dropdown"><a class="nav-link scrollto" href="/perfil">
+              @if ($user->userDetails && $user->userDetails->imagem)
                 <div class="profile"><img src="{{$user->userDetails->imagem}}" alt="#"></div>
+              @endif
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
               <a class="dropdown-item" href="{{ route('logout') }}"
