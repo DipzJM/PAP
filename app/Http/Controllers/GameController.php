@@ -7,13 +7,15 @@ use Illuminate\Http\Request;
 use App\Models\Game;
 use App\Models\User;
 use Exception;
+use Illuminate\Support\Facades\Auth;
 
 class GameController extends Controller
 {
 
     public function createGame(Request $request)
     {
-        try {
+        try { 
+            $user = Auth::user();
             $game = new Game;
             $game->id_mapa = $request->id_mapa;
             $game->id_utilizador_veiculo = $request->id_utilizador_veiculo;
