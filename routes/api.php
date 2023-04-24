@@ -23,16 +23,18 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::middleware('api')->post('/login', [AuthController::class, 'login']);
 
-//Criar Jogo
-Route::middleware('api')->post('/createGame', [GameController::class, 'CreateGame']);
 
-//Update UserVehicles
-Route::middleware('api')->post('/updateUserVehicles', [UserController::class, 'updateUserVehicles']);
 
 //login
 Route::group([
     'middleware' => 'auth:api',
     'guard' => 'auth'
-    ], function ($router) {
-        Route::get('/getUserData', [AuthController::class, 'userData']);
+], function ($router) {
+    Route::get('/getUserData', [AuthController::class, 'userData']);
+    
+    //Criar Jogo
+    Route::middleware('api')->post('/createGame', [GameController::class, 'CreateGame']);
+
+    //Update UserVehicles
+    Route::middleware('api')->post('/updateUserVehicles', [UserController::class, 'updateUserVehicles']);
 });
