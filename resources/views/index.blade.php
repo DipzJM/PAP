@@ -23,6 +23,7 @@
   <link href="vendor2/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="vendor2/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="vendor2/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="{{ asset('toastr/toastr.min.css') }}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   @vite(['resources/css/style.css', 'resources/css/animation.css'])
@@ -52,6 +53,7 @@
 
  
   <!-- Vendor JS Files -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="vendor2/purecounter/purecounter_vanilla.js"></script>
   <script src="vendor2/aos/aos.js"></script>
   <script src="vendor2/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -59,13 +61,13 @@
   <script src="vendor2/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="vendor2/swiper/swiper-bundle.min.js"></script>
   <script src="vendor2/waypoints/noframework.waypoints.js"></script>
-
+  <script src="{{ asset('toastr/toastr.min.js') }}"></script>
 
   <!-- Main JS File -->
   @vite(['resources/js/main.js', 'resources/js/register.js'])
   @vite(['resources/js/toast.js'])
   <script src="https://kit.fontawesome.com/d68abb87c8.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ 
 
 
 </body>

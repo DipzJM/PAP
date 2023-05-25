@@ -208,23 +208,25 @@
     </div>
     
     @if (session('success'))
-      <div id="liveToast1" class="toast fade" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true" data-bs-delay="2000">
-          <div class="toast-header text-white bg-success">
-              <i class="bi bi-exclamation-circle fs-4 me-2"></i>
-              <strong class="me-auto">Alert</strong>
-              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-          </div>
-          <div class="toast-body text-dark">
-              Message sent successfully.
-          </div>
-      </div>
+<script>
+    // Exibe o toastr com a mensagem de sucesso e define a posição para o canto inferior direito
+    toastr.success('Email successfully sent!', 'Alert', { positionClass: 'toast-bottom-left' });
 
-      <script>
-          // Ativa o Toast
-          var toast = new bootstrap.Toast(document.getElementById('liveToast1'));
-          toast.show();
-      </script>
-    @endif
+    // Configuração do toastr (opcional)
+    toastr.options = {
+        "closeButton": true,
+        "progressBar": true,
+        "timeOut": 2000,
+        "extendedTimeOut": 0,
+        "preventDuplicates": true
+    };
+</script>
+@endif
+
+
+
+
+
   </section>
   
 
