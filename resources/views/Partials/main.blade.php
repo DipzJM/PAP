@@ -188,7 +188,8 @@
 
       <!-- Contact Section -->
       <div class="form">
-        <form action="PHP/contact.php" method="post" role="form">
+        <form action="{{ route('feedback') }}" method="post" role="form">~
+          @csrf
           <div class="form-group">
             <select class="form-control" name="subject" id="subject" required>
               <option value="">Select a subject</option>
