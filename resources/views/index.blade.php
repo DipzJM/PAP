@@ -40,8 +40,6 @@
   @extends("Partials/main")
   <!-- ======= hero Section ======= -->
   @extends("Partials/hero")
-  <!-- ======= Alert Section ======= -->
-  @extends("Partials/alert")
 
   
 
@@ -64,7 +62,7 @@
   <script src="{{ asset('toastr/toastr.min.js') }}"></script>
 
   <!-- Main JS File -->
-  @vite(['resources/js/main.js', 'resources/js/register.js'])
+  @vite(['resources/js/main.js'])
   @vite(['resources/js/toast.js'])
   <script src="https://kit.fontawesome.com/d68abb87c8.js" crossorigin="anonymous"></script>
  

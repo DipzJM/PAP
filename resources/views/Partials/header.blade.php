@@ -23,6 +23,7 @@
                                        {{ __('Logout') }}
               </a>
               </ul>
+              
             </li>
           </ul>
           @if ($alert && $alert->ativo)

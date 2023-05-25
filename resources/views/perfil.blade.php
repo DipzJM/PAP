@@ -23,6 +23,7 @@
   <link href="vendor2/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="vendor2/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="vendor2/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="{{ asset('toastr/toastr.min.css') }}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   @vite(['resources/css/style.css', 'resources/css/animation.css'])
@@ -35,8 +36,6 @@
 
   <!-- ======= Header ======= -->
   @extends("Partials/header")
-  <!-- ======= Alert Section ======= -->
-  @extends("Partials/alert")
   
   <section id="detalhes" data-aos-delay="200" class="vh-0 py-25" style="background: rgb(250,2,2);
 background: linear-gradient(228deg, rgba(250,2,2,1) 12%, rgba(214,16,31,1) 68%, rgba(57,59,116,1) 70%);">
@@ -132,6 +131,7 @@ background: linear-gradient(228deg, rgba(250,2,2,1) 12%, rgba(214,16,31,1) 68%, 
 
  
   <!-- Vendor JS Files -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="vendor2/purecounter/purecounter_vanilla.js"></script>
   <script src="vendor2/aos/aos.js"></script>
   <script src="vendor2/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -139,14 +139,12 @@ background: linear-gradient(228deg, rgba(250,2,2,1) 12%, rgba(214,16,31,1) 68%, 
   <script src="vendor2/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="vendor2/swiper/swiper-bundle.min.js"></script>
   <script src="vendor2/waypoints/noframework.waypoints.js"></script>
-
+  <script src="{{ asset('toastr/toastr.min.js') }}"></script>
 
   <!-- Main JS File -->
   @vite(['resources/js/main.js'])
-  @vite([ 'resources/js/validation.js'])
   @vite(['resources/js/toast.js'])
   <script src="https://kit.fontawesome.com/d68abb87c8.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
 </body>
