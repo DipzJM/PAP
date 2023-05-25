@@ -185,7 +185,6 @@
         </div>
 
       </div>
-
       <!-- Contact Section -->
       <div class="form">
         <form action="{{ route('feedback') }}" method="post" role="form">~
@@ -207,7 +206,30 @@
         </form>
       </div>
     </div>
+    
+    @if (session('success'))
+      <div id="liveToast1" class="toast fade" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true" data-bs-delay="2000">
+          <div class="toast-header text-white bg-success">
+              <i class="bi bi-exclamation-circle fs-4 me-2"></i>
+              <strong class="me-auto">Alert</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body text-dark">
+              Message sent successfully.
+          </div>
+      </div>
+
+      <script>
+          // Ativa o Toast
+          var toast = new bootstrap.Toast(document.getElementById('liveToast1'));
+          toast.show();
+      </script>
+    @endif
   </section>
+  
+
+
+
   <!-- End Contact Section -->
 @endif
 

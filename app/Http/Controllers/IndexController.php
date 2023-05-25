@@ -50,25 +50,25 @@ class IndexController extends Controller
                 // Carrega o conteúdo do modelo de email
                 $html = file_get_contents('../resources/views/emails/feedback.blade.php');
             
-                // Substitui as palavras-chave no modelo pelos valores do formulário
+                // Substitui as palavras pelos valores do formulário
                 $html = str_replace("texto", $mensagem, $html);
                 $html = str_replace('Subject', $subject, $html);
             
-                // Grava o conteúdo modificado no arquivo
+                // Grava o conteúdo modificado no ficheiro
                 file_put_contents('../resources/views/emails/feedback.blade.php', $html);
+            
                 
                 // Envia o email
                 \Mail::send('emails.feedback', ['user' => $user], function ($message) use ($user, $subject, $mensagem) {
-                    $message->to($user->email, $user->name);
+                    $message->to("racingmania2023@gmail.com");
                     $message->subject($subject);
                     $message->html($mensagem);
                 });
-            
-                return redirect()->to('/');
+
+                session()->flash('success', 'Email enviado com sucesso!');
+               
             } catch (Exception $e) {
-                // Trata exceções
-                $errorMessage = $e->getMessage();
-                // Faça algo com a mensagem de erro, como registrá-la em um arquivo de log ou exibi-la para o usuário
+                dd($e->getMessage());
             }
             
 
