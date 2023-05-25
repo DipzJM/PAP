@@ -91,29 +91,16 @@
         </p>
       </header>
       <div class="container" data-aos-delay="200">
-        <div class="row">
+      <div class="row">
+        @foreach ($noticias as $noticia)
           <div class="card col-md-4 mb-3">
-            <img src="img/noticia.gif" class="card-img-top" alt="..." style="width: 100%;">
-            <div class="card-body">
-              <h5 class="card-title"><strong>Noticia 1</strong></h5>
-              <p class="card-text">texto</p>
-            </div>
+              <img src="img/noticia.gif" class="card-img-top" alt="..." style="width: 100%;">
+              <div class="card-body">
+                  <h5 class="card-title"><strong>{{ $noticia->titulo }}</strong></h5>
+                  <p class="card-text">{{ $noticia->texto }}</p>
+              </div>
           </div>
-          <div class="card col-md-4 mb-3">
-            <img src="img/noticia.gif" class="card-img-top" alt="..." style="width: 100%;">
-            <div class="card-body">
-              <h5 class="card-title"><strong>Noticia 2</strong></h5>
-              <p class="card-text">texto</p>
-            </div>
-          </div>
-          <div class="card col-md-4 mb-3">
-            <img src="img/noticia.gif" class="card-img-top" alt="..." style="width: 100%;">
-            <div class="card-body">
-              <h5 class="card-title"><strong>Noticia 3</strong></h5>
-              <p class="card-text">texto</p>
-            </div>
-          </div>
-        </div>
+        @endforeach
       </div>
 
 
@@ -328,28 +315,15 @@
     </header>
     <div class="container" data-aos-delay="200">
       <div class="row">
+      @foreach ($noticias as $noticia)
         <div class="card col-md-4 mb-3">
-          <img src="img/noticia.gif" class="card-img-top" alt="..." style="width: 100%;">
-          <div class="card-body">
-            <h5 class="card-title"><strong>Noticia 1</strong></h5>
-            <p class="card-text">texto</p>
-          </div>
+            <img src="img/noticia.gif" class="card-img-top" alt="..." style="width: 100%;">
+            <div class="card-body">
+                <h5 class="card-title"><strong>{{ $noticia->titulo }}</strong></h5>
+                <p class="card-text">{{ $noticia->texto }}</p>
+            </div>
         </div>
-        <div class="card col-md-4 mb-3">
-          <img src="img/noticia.gif" class="card-img-top" alt="..." style="width: 100%;">
-          <div class="card-body">
-            <h5 class="card-title"><strong>Noticia 2</strong></h5>
-            <p class="card-text">texto</p>
-          </div>
-        </div>
-        <div class="card col-md-4 mb-3">
-          <img src="img/noticia.gif" class="card-img-top" alt="..." style="width: 100%;">
-          <div class="card-body">
-            <h5 class="card-title"><strong>Noticia 3</strong></h5>
-            <p class="card-text">texto</p>
-          </div>
-        </div>
-      </div>
+        @endforeach
     </div>
 
 
