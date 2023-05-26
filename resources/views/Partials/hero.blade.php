@@ -5,7 +5,7 @@
     <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
       <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active" style="background-image: url(img/hero-carousel/1.svg)">
+        <div class="carousel-item active" style="background-image: url(img/hero-carousel/image.png)">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Racing Mania</h2>
@@ -14,7 +14,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item" style="background-image: url(img/hero-carousel/2.svg)">
+        <div class="carousel-item" style="background-image: url(img/hero-carousel/image2.png)">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Racing Mania</h2>
@@ -24,7 +24,7 @@
           </div>
         </div>
 
-        <div class="carousel-item" style="background-image: url(img/hero-carousel/3.svg)">
+        <div class="carousel-item" style="background-image: url(img/hero-carousel/image3.png)">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Racing Mania</h2>
@@ -34,7 +34,7 @@
           </div>
         </div>
 
-        <div class="carousel-item" style="background-image: url(img/hero-carousel/4.svg)">
+        <div class="carousel-item" style="background-image: url(img/hero-carousel/image4.png)">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Racing Mania</h2>
@@ -44,7 +44,7 @@
           </div>
         </div>
 
-        <div class="carousel-item" style="background-image: url(img/hero-carousel/5.svg)">
+        <div class="carousel-item" style="background-image: url(img/hero-carousel/image5.png)">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Racing Mania</h2>
@@ -78,7 +78,7 @@
     <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
       <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active" style="background-image: url(img/hero-carousel/1.svg)">
+        <div class="carousel-item active" style="background-image: url(img/hero-carousel/image.png)">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Racing Mania</h2>
@@ -86,7 +86,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item" style="background-image: url(img/hero-carousel/2.svg)">
+        <div class="carousel-item" style="background-image: url(img/hero-carousel/image2.png)">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Racing Mania</h2>
@@ -95,7 +95,7 @@
           </div>
         </div>
 
-        <div class="carousel-item" style="background-image: url(img/hero-carousel/3.svg)">
+        <div class="carousel-item" style="background-image: url(img/hero-carousel/image3.png)">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Racing Mania</h2>
@@ -104,7 +104,7 @@
           </div>
         </div>
 
-        <div class="carousel-item" style="background-image: url(img/hero-carousel/4.svg)">
+        <div class="carousel-item" style="background-image: url(img/hero-carousel/image4.png)">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Racing Mania</h2>
@@ -113,7 +113,7 @@
           </div>
         </div>
 
-        <div class="carousel-item" style="background-image: url(img/hero-carousel/5.svg)">
+        <div class="carousel-item" style="background-image: url(img/hero-carousel/image5.png)">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Racing Mania</h2>

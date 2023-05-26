@@ -12,6 +12,6 @@ if (toastTrigger) {
       "extendedTimeOut": 0,
       "preventDuplicates": true
     };
-    toastr.error('Racing Mania in development...', 'Alert');
+    toastr.error('Racing Mania is in development...', 'Alert');
   });
 }
