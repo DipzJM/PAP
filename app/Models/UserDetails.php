@@ -18,7 +18,6 @@ class UserDetails extends Model
         'corridas_realizadas',
         'num_moedas',
         'numero_telemovel',
-        'tempo_jogado',
         'imagem',
     ];
 

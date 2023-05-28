@@ -37,9 +37,9 @@
   <!-- ======= Header ======= -->
   @extends("Partials/header")
   
-  <section id="detalhes" data-aos-delay="200" class="vh-0 py-25" style="background: rgb(250,2,2);
+  <section id="detalhes" data-aos-delay="200" style="background: rgb(250,2,2);
 background: linear-gradient(228deg, rgba(250,2,2,1) 12%, rgba(214,16,31,1) 68%, rgba(57,59,116,1) 70%);">
-  <div class="container py-5 h-1" data-aos="fade-up">
+  <div class="container py-5 h-5" data-aos="fade-up">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col col-lg-12 mb-4 mb-lg-10">
         <div class="card mb-3" style="border-radius: .5rem;">
@@ -86,7 +86,7 @@ background: linear-gradient(228deg, rgba(250,2,2,1) 12%, rgba(214,16,31,1) 68%, 
           <p class="section-description"></p>
         </div>
         
-        <div class="row counters">
+        <div class="row counters" style="padding-bottom: 5%;">
           <div class="col-lg-3 col-6 text-center">
             <span data-purecounter-start="0" data-purecounter-end="{{$user->userDetails->num_moedas}}" data-purecounter-duration="1" class="purecounter"></span>
             <p>Coins</p>
@@ -98,16 +98,11 @@ background: linear-gradient(228deg, rgba(250,2,2,1) 12%, rgba(214,16,31,1) 68%, 
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="{{ number_format($user->userDetails->tempo_jogado, 1) }}" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Time played</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
             <span data-purecounter-start="0" data-purecounter-end="{{$user->userDetails->corridas_realizadas}}" data-purecounter-duration="1" class="purecounter"></span>
             <p>Races performed</p>
           </div>
 
-          <div class="col-lg-0 col-0 text-center">
+          <div class="col-lg-3 col-6 text-center">
             <span data-purecounter-start="0" data-purecounter-end="{{$user->userDetails->voltas_realizadas}}" data-purecounter-duration="1" class="purecounter"></span>
             <p>Laps performed</p>
           </div>
@@ -122,7 +117,7 @@ background: linear-gradient(228deg, rgba(250,2,2,1) 12%, rgba(214,16,31,1) 68%, 
       </div>
     </div>
   </div>
-</section>
+</section >
 
  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
