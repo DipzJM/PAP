@@ -150,7 +150,7 @@
                   
       <div
          style="font-family:Press Start 2P;font-size:25px;font-weight:bold;line-height:1;text-align:center;color:#000000;"
-      >Bug/Glitch</div>
+      >assunto</div>
     
                 </td>
               </tr>
@@ -200,7 +200,7 @@
                   
       <div
          style="font-family:Press Start 2P;font-size:16px;line-height:1;text-align:left;color:#FFFFFF;"
-      ><b>xddsdsa</b></div>
+      ><b>texto</b></div>
     
                 </td>
               </tr>
