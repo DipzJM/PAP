@@ -82,7 +82,7 @@ class RegisterController extends Controller
         $userDetails->corridas_realizadas = 0;
         $userDetails->num_moedas = 0;
         $userDetails->numero_telemovel = $data['phone_number'];
-        $userDetails->imagem = 'img\imagens_utilizadores\logo.png';
+        $userDetails->imagem = 'img\imagens_utilizadores\cartoonDriver.png';
         $userDetails->save();
 
         $utilizadorVeiculo = new UtilizadorVeiculo;
