@@ -66,13 +66,15 @@ class IndexController extends Controller
                     $mail->html($mensagem);
                 });
     
+                
                 session()->flash('success', 'Email enviado com sucesso!');
-    
-                $html = str_replace($mensagem, 'texto', $html);
-                $html = str_replace($subject, 'assunto', $html);
 
-                // Save the modified content to the file
-                file_put_contents('../resources/views/emails/feedback.blade.php', $html);
+                //ERRO
+                //$html = str_replace($mensagem, 'texto', $html);
+                //$html = str_replace($subject, 'assunto', $html);
+//
+                //// Save the modified content to the file
+                //file_put_contents('../resources/views/emails/feedback.blade.php', $html);
 
             } catch (Exception $e) {
                 dd($e->getMessage());

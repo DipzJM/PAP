@@ -15,3 +15,6 @@ if (toastTrigger) {
     toastr.error('Racing Mania is in development...', 'Alert');
   });
 }
+
+
+

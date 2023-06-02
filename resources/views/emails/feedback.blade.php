@@ -13,7 +13,7 @@
       #outlook a { padding:0; }
       body { margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; }
       table, td { border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt; }
-      img { border:0;height:auto;line-height:100%; outline:none;text-decoration:none;-ms-interpolation-mode:bicubic; }
+      img { border:0;height:auto;line-height:100%; outline:none;text-decoration:none;-ms-interptextotion-mode:bicubic; }
       p { display:block;margin:13px 0; }
     </style>
     <!--[if mso]>
@@ -150,7 +150,7 @@
                   
       <div
          style="font-family:Press Start 2P;font-size:25px;font-weight:bold;line-height:1;text-align:center;color:#000000;"
-      >assunto</div>
+      >Partnership</div>
     
                 </td>
               </tr>

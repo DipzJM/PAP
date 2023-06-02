@@ -194,6 +194,8 @@
       </div>
     </div>
     
+
+
     @if (session('success'))
 <script>
     // Exibe o toastr com a mensagem de sucesso e define a posição para o canto inferior direito
@@ -209,9 +211,6 @@
     };
 </script>
 @endif
-
-
-
 
 
   </section>
