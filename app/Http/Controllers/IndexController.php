@@ -33,10 +33,10 @@ class IndexController extends Controller
         if (Auth::check()) {
             $user = Auth::user();
             $userId = $user->id;
-    
+        
             // Get message from the POST form
             $mensagem = $request->input('message');
-    
+        
             // Insert comment into the table
             DB::table('comentarios')->insert([
                 'id' => null,
@@ -44,44 +44,29 @@ class IndexController extends Controller
                 'texto_comentario' => $mensagem,
                 'created_at' => null,
             ]);
-    
+        
             try {
                 // Get the subject and message from the form
                 $subject = $request->input('subject');
-    
-                // Load the content of the email template
-                $html = file_get_contents('../resources/views/emails/feedback.blade.php');
-    
-                // Replace the placeholders with form values
-                $html = str_replace("texto", $mensagem, $html);
-                $html = str_replace('assunto', $subject, $html);
-    
-                // Save the modified content to the file
-                file_put_contents('../resources/views/emails/feedback.blade.php', $html);
-    
+            
                 // Send the email
-                \Mail::send('emails.feedback', ['user' => $user], function ($mail) use ($user, $subject, $mensagem) {
+                \Mail::send('emails.feedback', [
+                    'mensagem' => $mensagem,
+                    'assunto' => $subject,
+                    'user' => $user
+                ], function ($mail) use ($subject) {
                     $mail->to("racingmania2023@gmail.com");
                     $mail->subject($subject);
-                    $mail->html($mensagem);
                 });
-    
-                
-                session()->flash('success', 'Email enviado com sucesso!');
-
-                //ERRO
-                //$html = str_replace($mensagem, 'texto', $html);
-                //$html = str_replace($subject, 'assunto', $html);
-//
-                //// Save the modified content to the file
-                //file_put_contents('../resources/views/emails/feedback.blade.php', $html);
-
+            
+                return redirect('/')->with('success', 'Email enviado com sucesso!');
             } catch (Exception $e) {
                 dd($e->getMessage());
             }
         }
     }
     
+        
     
 
 
