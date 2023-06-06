@@ -19,6 +19,7 @@ class UserDetails extends Model
         'num_moedas',
         'numero_telemovel',
         'imagem',
+        '2fa',
     ];
 
 }

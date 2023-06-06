@@ -83,6 +83,14 @@ class RegisterController extends Controller
         $userDetails->num_moedas = 0;
         $userDetails->numero_telemovel = $data['phone_number'];
         $userDetails->imagem = 'img\imagens_utilizadores\cartoonDriver.png';
+        
+        if (isset($data['2fa']) && $data['2fa'] === 'on') {
+            $userDetails->{'2fa'} = 1;
+        } else {
+            $userDetails->{'2fa'} = 0;
+        }
+
+
         $userDetails->save();
 
         $utilizadorVeiculo = new UtilizadorVeiculo;

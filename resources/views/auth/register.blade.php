@@ -84,6 +84,18 @@
                             </div>
                         </div>
 
+                        <div class="row mb-3">
+                            <label for="2fa-confirm" class="col-md-4 text-md-end">{{ __('2FA') }}</label>
+                            <div class="col-md-4">
+                                <div class="checkbox-wrapper-19">
+                                    <input type="checkbox" id="cbtest-19" name= "2fa">
+                                    <label for="cbtest-19" class="check-box"></label>
+                                </div>
+                            </div>
+                        </div>
+
+
+
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
