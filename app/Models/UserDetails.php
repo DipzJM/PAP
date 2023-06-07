@@ -20,6 +20,7 @@ class UserDetails extends Model
         'numero_telemovel',
         'imagem',
         '2fa',
+        'vCode',
     ];
 
 }
