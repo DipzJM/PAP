@@ -50,3 +50,9 @@ Quando cria um jogo como é que ele sabe o id da tabela utilizadores_veiculos?
 
 
 composer require illuminate/filesystem
+
+
+SMS
+VONAGE_API_KEY=0410f541
+VONAGE_API_SECRET=y5PS4zOevomGwqei
+VONAGE_PHONE_NUMBER=933107871
