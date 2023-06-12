@@ -10,8 +10,8 @@ CREATE TABLE tipo_noticias(
 CREATE TABLE noticias(
     id INT(11) UNSIGNED NOT NULL,
     id_tipo INT(11) UNSIGNED NOT NULL,
-    titulo VARCHAR(50) NOT NULL,
-    texto VARCHAR(100) NOT NULL,
+    titulo VARCHAR(999) NOT NULL,
+    texto VARCHAR(999) NOT NULL,
     deleted_at TIMESTAMP NULL
 )engine = InnoDB;
 

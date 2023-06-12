@@ -43,12 +43,6 @@ MAIL_FROM_ADDRESS="racingmania2023@gmail.com"
 MAIL_FROM_NAME="Racing Mania"
 
 
-Duvida!!!!
-
-Quando cria um jogo como é que ele sabe o id da tabela utilizadores_veiculos?
-
-
-
 composer require illuminate/filesystem
 
 
