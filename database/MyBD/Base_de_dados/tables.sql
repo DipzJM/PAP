@@ -33,6 +33,8 @@ CREATE TABLE user_details(
     num_moedas INT(15) NOT NULL,
     numero_telemovel INT(10) NULL,
     imagem VARCHAR(100) NOT NULL,
+    2fa TINYINT(1) NULL,
+    vCode INT(11) NULL,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
 )engine = InnoDB;   
